@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: transparent; padding: 40px; font-family: 'Sora', sans-serif; }
+a { cursor: pointer; }
+a text:hover { fill: #93c5fd; text-decoration: underline; }
+</style>
+</head>
+<body>
+<svg width="1100" height="2500" viewBox="0 0 1100 2500" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+    <path d="M0,0 L0,6 L8,3 z" fill="#334155"/>
+  </marker>
+  <marker id="arrG" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+    <path d="M0,0 L0,6 L8,3 z" fill="#10b981"/>
+  </marker>
+  <marker id="arrR" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+    <path d="M0,0 L0,6 L8,3 z" fill="#ef4444"/>
+  </marker>
+  <marker id="arrB" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+    <path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/>
+  </marker>
+  <filter id="sh"><feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/></filter>
+</defs>
+
+<rect x="200" y="20" width="700" height="36" rx="18" fill="#172554" stroke="#2563eb" stroke-width="1.5"/>
+<text x="550" y="43" text-anchor="middle" font-family="Space Mono" font-size="11" fill="#93c5fd" font-weight="700" letter-spacing="1">PRIMEIRO ACESSO FRANQUEADO</text>
+
+<rect x="400" y="76" width="300" height="44" rx="22" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2" filter="url(#sh)"/>
+<text x="550" y="103" text-anchor="middle" font-family="Sora" font-size="13" font-weight="700" fill="#93c5fd">🟢 INÍCIO</text>
+<line x1="550" y1="120" x2="550" y2="140" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<rect x="370" y="140" width="360" height="44" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#sh)"/>
+<text x="550" y="157" text-anchor="middle" font-family="Sora" font-size="11" fill="#94a3b8">Franqueado realiza</text>
+<text x="550" y="173" text-anchor="middle" font-family="Sora" font-size="11" fill="#94a3b8">primeiro contato com o suporte</text>
+<line x1="550" y1="184" x2="550" y2="204" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<rect x="370" y="204" width="360" height="44" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#sh)"/>
+<text x="550" y="221" text-anchor="middle" font-family="Sora" font-size="11" fill="#94a3b8">Franqueado realiza envio</text>
+<text x="550" y="237" text-anchor="middle" font-family="Sora" font-size="11" fill="#94a3b8">dos dados da franquia</text>
+<line x1="550" y1="248" x2="550" y2="268" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<polygon points="550,268 720,318 550,368 380,318" fill="#1a1a2e" stroke="#6366f1" stroke-width="1.5" filter="url(#sh)"/>
+<text x="550" y="311" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#c7d2fe">Enviou todos</text>
+<text x="550" y="327" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#c7d2fe">os dados?</text>
+
+<line x1="550" y1="368" x2="550" y2="388" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrG)"/>
+<rect x="524" y="372" width="52" height="18" rx="9" fill="#10b981"/>
+<text x="550" y="384" text-anchor="middle" font-family="Space Mono" font-size="8" fill="white" font-weight="700">SIM</text>
+
+<line x1="720" y1="318" x2="820" y2="318" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrR)"/>
+<text x="762" y="311" text-anchor="middle" font-family="Space Mono" font-size="8" fill="#ef4444" font-weight="700">NÃO</text>
+<rect x="820" y="295" width="230" height="46" rx="8" fill="#2d1515" stroke="#ef4444" stroke-width="1.5" filter="url(#sh)"/>
+<text x="935" y="313" text-anchor="middle" font-family="Sora" font-size="10" fill="#fca5a5">Aguardar envio dos</text>
+<text x="935" y="329" text-anchor="middle" font-family="Sora" font-size="10" fill="#fca5a5">dados restantes</text>
+
+<polygon points="550,388 720,438 550,488 380,438" fill="#1a1a2e" stroke="#6366f1" stroke-width="1.5" filter="url(#sh)"/>
+<text x="550" y="430" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#c7d2fe">Franquia cadastrada</text>
+<text x="550" y="447" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#c7d2fe">no Visiun?</text>
+
+<line x1="550" y1="488" x2="550" y2="508" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrG)"/>
+<rect x="524" y="491" width="52" height="18" rx="9" fill="#10b981"/>
+<text x="550" y="503" text-anchor="middle" font-family="Space Mono" font-size="8" fill="white" font-weight="700">SIM</text>
+
+<line x1="380" y1="438" x2="270" y2="438" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrR)"/>
+<text x="322" y="431" text-anchor="middle" font-family="Space Mono" font-size="8" fill="#ef4444" font-weight="700">NÃO</text>
+<rect x="50" y="415" width="220" height="46" rx="8" fill="#2d1515" stroke="#ef4444" stroke-width="1.5" filter="url(#sh)"/>
+<text x="160" y="432" text-anchor="middle" font-family="Sora" font-size="10" fill="#fca5a5">Solicitar cadastro da franquia</text>
+<text x="160" y="448" text-anchor="middle" font-family="Sora" font-size="10" fill="#fca5a5">para a matriz</text>
+
+<line x1="160" y1="461" x2="160" y2="490" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+<polygon points="160,490 270,530 160,570 50,530" fill="#1a1a2e" stroke="#6366f1" stroke-width="1.5" filter="url(#sh)"/>
+<text x="160" y="524" text-anchor="middle" font-family="Sora" font-size="10" font-weight="600" fill="#c7d2fe">Master cadastrou</text>
+<text x="160" y="538" text-anchor="middle" font-family="Sora" font-size="10" font-weight="600" fill="#c7d2fe">a franquia?</text>
+<line x1="270" y1="530" x2="380" y2="530" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrG)"/>
+<text x="322" y="523" text-anchor="middle" font-family="Space Mono" font-size="8" fill="#10b981" font-weight="700">SIM</text>
+<line x1="380" y1="530" x2="380" y2="438" stroke="#10b981" stroke-width="1.5"/>
+
+<rect x="370" y="508" width="360" height="44" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#sh)"/>
+<text x="550" y="525" text-anchor="middle" font-family="Sora" font-size="11" fill="#94a3b8">Confirmar se será o</text>
+<text x="550" y="541" text-anchor="middle" font-family="Sora" font-size="11" fill="#94a3b8">primeiro acesso do franqueado</text>
+<line x1="550" y1="552" x2="550" y2="572" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<rect x="400" y="572" width="300" height="36" rx="18" fill="#172554" stroke="#2563eb" stroke-width="1.5"/>
+<text x="550" y="595" text-anchor="middle" font-family="Space Mono" font-size="10" fill="#60a5fa" font-weight="700">↓ ETAPA DE LIBERAÇÃO DO PRIMX</text>
+<line x1="550" y1="608" x2="550" y2="628" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arrB)"/>
+
+
+<rect x="200" y="628" width="700" height="36" rx="18" fill="#172554" stroke="#2563eb" stroke-width="1.5"/>
+<text x="550" y="651" text-anchor="middle" font-family="Space Mono" font-size="11" fill="#93c5fd" font-weight="700" letter-spacing="1">ETAPA DE LIBERAÇÃO DO PRIMX</text>
+<line x1="550" y1="664" x2="550" y2="684" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<rect x="370" y="684" width="360" height="44" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#sh)"/>
+<text x="550" y="701" text-anchor="middle" font-family="Sora" font-size="11" fill="#94a3b8">📤 Enviar mensagem rápida</text>
+<text x="550" y="717" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#60a5fa">"Apresentação PrimX"</text>
+<line x1="550" y1="728" x2="550" y2="748" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<polygon points="550,748 740,808 550,868 360,808" fill="#1a1a2e" stroke="#6366f1" stroke-width="1.5" filter="url(#sh)"/>
+<text x="550" y="800" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#c7d2fe">Franqueado realizou</text>
+<text x="550" y="817" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#c7d2fe">cadastro no PrimX?</text>
+
+<line x1="740" y1="808" x2="840" y2="808" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrR)"/>
+<text x="783" y="801" text-anchor="middle" font-family="Space Mono" font-size="8" fill="#ef4444" font-weight="700">NÃO</text>
+<rect x="840" y="784" width="210" height="46" rx="8" fill="#2d1515" stroke="#ef4444" stroke-width="1.5" filter="url(#sh)"/>
+<text x="945" y="802" text-anchor="middle" font-family="Sora" font-size="10" fill="#fca5a5">Perguntar se deseja</text>
+<text x="945" y="818" text-anchor="middle" font-family="Sora" font-size="10" fill="#fca5a5">continuar o atendimento</text>
+<line x1="945" y1="830" x2="945" y2="860" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="840" y="860" width="210" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+<text x="945" y="875" text-anchor="middle" font-family="Sora" font-size="10" fill="#94a3b8">⏳ Aguardar 5 minutos</text>
+<text x="945" y="889" text-anchor="middle" font-family="Sora" font-size="10" fill="#94a3b8">+ msg "Fechamento"</text>
+<line x1="945" y1="896" x2="945" y2="916" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="856" y="916" width="178" height="36" rx="18" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="945" y="939" text-anchor="middle" font-family="Sora" font-size="11" font-weight="700" fill="#93c5fd">🔴 Encerrar atendimento</text>
+
+<line x1="550" y1="868" x2="550" y2="888" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrG)"/>
+<rect x="524" y="872" width="52" height="18" rx="9" fill="#10b981"/>
+<text x="550" y="884" text-anchor="middle" font-family="Space Mono" font-size="8" fill="white" font-weight="700">SIM</text>
+
+<rect x="370" y="888" width="360" height="44" rx="8" fill="#0f2d1e" stroke="#10b981" stroke-width="1.5" filter="url(#sh)"/>
+<text x="550" y="905" text-anchor="middle" font-family="Sora" font-size="11" fill="#6ee7b7">Realizar liberação de acesso</text>
+<text x="550" y="921" text-anchor="middle" font-family="Sora" font-size="11" fill="#6ee7b7">na plataforma + pedir login</text>
+<line x1="550" y1="932" x2="550" y2="952" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<polygon points="550,952 740,1012 550,1072 360,1012" fill="#1a1a2e" stroke="#6366f1" stroke-width="1.5" filter="url(#sh)"/>
+<text x="550" y="1004" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#c7d2fe">Consegue acessar</text>
+<text x="550" y="1020" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#c7d2fe">e assistir vídeos?</text>
+
+
+<line x1="360" y1="1012" x2="210" y2="1012" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrR)"/>
+<text x="285" y="1005" text-anchor="middle" font-family="Space Mono" font-size="8" fill="#ef4444" font-weight="700">NÃO</text>
+
+<rect x="30" y="988" width="180" height="46" rx="8" fill="#2d1515" stroke="#ef4444" stroke-width="1.5" filter="url(#sh)"/>
+<text x="120" y="1006" text-anchor="middle" font-family="Sora" font-size="10" fill="#fca5a5">Pedir print do erro</text>
+<text x="120" y="1022" text-anchor="middle" font-family="Sora" font-size="10" fill="#fca5a5">que aparece na tela</text>
+<line x1="120" y1="1034" x2="120" y2="1060" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<polygon points="120,1060 210,1100 120,1140 30,1100" fill="#1a1a2e" stroke="#6366f1" stroke-width="1.5" filter="url(#sh)"/>
+<text x="120" y="1094" text-anchor="middle" font-family="Sora" font-size="9.5" font-weight="600" fill="#c7d2fe">Pendência de</text>
+<text x="120" y="1108" text-anchor="middle" font-family="Sora" font-size="9.5" font-weight="600" fill="#c7d2fe">aprovação?</text>
+
+<line x1="120" y1="1140" x2="120" y2="1160" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrG)"/>
+<rect x="94" y="1143" width="52" height="18" rx="9" fill="#10b981"/>
+<text x="120" y="1155" text-anchor="middle" font-family="Space Mono" font-size="8" fill="white" font-weight="700">SIM</text>
+<rect x="30" y="1160" width="180" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#sh)"/>
+<text x="120" y="1178" text-anchor="middle" font-family="Sora" font-size="10" fill="#94a3b8">Ctrl+Shift+R para</text>
+<text x="120" y="1193" text-anchor="middle" font-family="Sora" font-size="10" fill="#94a3b8">limpeza de cache</text>
+<text x="120" y="1208" text-anchor="middle" font-family="Sora" font-size="10" fill="#94a3b8">+ realizar login</text>
+
+<line x1="120" y1="1216" x2="120" y2="1235" stroke="#334155" stroke-width="1.5"/>
+<line x1="120" y1="1235" x2="10" y2="1235" stroke="#334155" stroke-width="1.5"/>
+<line x1="10" y1="1235" x2="10" y2="970" stroke="#334155" stroke-width="1.5"/>
+<line x1="10" y1="970" x2="120" y2="970" stroke="#334155" stroke-width="1.5"/>
+<line x1="120" y1="970" x2="120" y2="988" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+<text x="65" y="1230" text-anchor="middle" font-family="Sora" font-size="9" fill="#475569" font-style="italic">↩ Tentar novamente</text>
+
+<line x1="210" y1="1100" x2="290" y2="1100" stroke="#ef4444" stroke-width="1.5"/>
+<text x="250" y="1094" text-anchor="middle" font-family="Space Mono" font-size="8" fill="#ef4444" font-weight="700">NÃO</text>
+<line x1="290" y1="1100" x2="290" y2="1140" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+<polygon points="290,1140 360,1185 290,1230 220,1185" fill="#1a1a2e" stroke="#6366f1" stroke-width="1.5" filter="url(#sh)"/>
+<text x="290" y="1178" text-anchor="middle" font-family="Sora" font-size="9.5" font-weight="600" fill="#c7d2fe">Credenciais</text>
+<text x="290" y="1194" text-anchor="middle" font-family="Sora" font-size="9.5" font-weight="600" fill="#c7d2fe">inválidas?</text>
+
+<line x1="290" y1="1230" x2="290" y2="1260" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrG)"/>
+<rect x="264" y="1233" width="52" height="18" rx="9" fill="#10b981"/>
+<text x="290" y="1245" text-anchor="middle" font-family="Space Mono" font-size="8" fill="white" font-weight="700">SIM</text>
+<rect x="200" y="1260" width="180" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#sh)"/>
+<text x="290" y="1277" text-anchor="middle" font-family="Sora" font-size="10" fill="#94a3b8">Informar senha incorreta</text>
+<text x="290" y="1292" text-anchor="middle" font-family="Sora" font-size="10" fill="#94a3b8">+ usar "Esqueci a senha"</text>
+<text x="290" y="1307" text-anchor="middle" font-family="Sora" font-size="10" fill="#6ee7b7">✓ Franqueado acessa</text>
+
+<line x1="290" y1="1316" x2="290" y2="1340" stroke="#334155" stroke-width="1.5"/>
+<line x1="290" y1="1340" x2="550" y2="1340" stroke="#334155" stroke-width="1.5"/>
+
+
+<line x1="550" y1="1072" x2="550" y2="1092" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrG)"/>
+<rect x="524" y="1075" width="52" height="18" rx="9" fill="#10b981"/>
+<text x="550" y="1087" text-anchor="middle" font-family="Space Mono" font-size="8" fill="white" font-weight="700">SIM</text>
+
+<rect x="370" y="1092" width="360" height="44" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#sh)"/>
+<text x="550" y="1109" text-anchor="middle" font-family="Sora" font-size="11" fill="#94a3b8">📤 Enviar msg rápida</text>
+<text x="550" y="1125" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#60a5fa">"Documentação Franqueados"</text>
+<line x1="550" y1="1136" x2="550" y2="1156" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<polygon points="550,1156 740,1216 550,1276 360,1216" fill="#1a1a2e" stroke="#6366f1" stroke-width="1.5" filter="url(#sh)"/>
+<text x="550" y="1208" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#c7d2fe">Conseguiu localizar</text>
+<text x="550" y="1224" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#c7d2fe">e baixar documento?</text>
+
+<line x1="740" y1="1216" x2="840" y2="1216" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrR)"/>
+<text x="783" y="1209" text-anchor="middle" font-family="Space Mono" font-size="8" fill="#ef4444" font-weight="700">NÃO</text>
+<rect x="840" y="1192" width="210" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#sh)"/>
+<text x="945" y="1210" text-anchor="middle" font-family="Sora" font-size="10" fill="#94a3b8">Guiá-lo até o documento</text>
+<text x="945" y="1225" text-anchor="middle" font-family="Sora" font-size="10" fill="#94a3b8">via texto explicativo</text>
+<text x="945" y="1240" text-anchor="middle" font-family="Sora" font-size="10" fill="#94a3b8">ou vídeo</text>
+<line x1="945" y1="1248" x2="945" y2="1278" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="840" y="1278" width="210" height="36" rx="8" fill="#0f2d1e" stroke="#10b981" stroke-width="1.5"/>
+<text x="945" y="1295" text-anchor="middle" font-family="Sora" font-size="10" fill="#6ee7b7">✓ Franqueado confirma</text>
+<text x="945" y="1309" text-anchor="middle" font-family="Sora" font-size="10" fill="#6ee7b7">o download</text>
+
+<line x1="945" y1="1314" x2="945" y2="1340" stroke="#10b981" stroke-width="1.5"/>
+<line x1="945" y1="1340" x2="550" y2="1340" stroke="#10b981" stroke-width="1.5"/>
+
+<line x1="550" y1="1276" x2="550" y2="1296" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrG)"/>
+<rect x="524" y="1279" width="52" height="18" rx="9" fill="#10b981"/>
+<text x="550" y="1291" text-anchor="middle" font-family="Space Mono" font-size="8" fill="white" font-weight="700">SIM</text>
+
+<rect x="400" y="1296" width="300" height="36" rx="18" fill="#172554" stroke="#2563eb" stroke-width="1.5"/>
+<text x="550" y="1319" text-anchor="middle" font-family="Space Mono" font-size="10" fill="#60a5fa" font-weight="700">↓ ETAPA DE LIBERAÇÃO DO VISIUN</text>
+<line x1="550" y1="1332" x2="550" y2="1352" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arrB)"/>
+
+
+<rect x="200" y="1352" width="700" height="36" rx="18" fill="#172554" stroke="#2563eb" stroke-width="1.5"/>
+<text x="550" y="1375" text-anchor="middle" font-family="Space Mono" font-size="11" fill="#93c5fd" font-weight="700" letter-spacing="1">ETAPA DE LIBERAÇÃO DO VISIUN</text>
+<line x1="550" y1="1388" x2="550" y2="1408" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<rect x="370" y="1408" width="360" height="44" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#sh)"/>
+<text x="550" y="1425" text-anchor="middle" font-family="Sora" font-size="11" fill="#94a3b8">📤 Enviar mensagem rápida</text>
+<text x="550" y="1441" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#60a5fa">"Apresentação Visiun"</text>
+<line x1="550" y1="1452" x2="550" y2="1472" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<polygon points="550,1472 730,1527 550,1582 370,1527" fill="#1a1a2e" stroke="#6366f1" stroke-width="1.5" filter="url(#sh)"/>
+<text x="550" y="1519" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#c7d2fe">Visiun diz que a</text>
+<text x="550" y="1535" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#c7d2fe">conta já existe?</text>
+
+<line x1="730" y1="1527" x2="840" y2="1527" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrR)"/>
+<text x="780" y="1521" text-anchor="middle" font-family="Space Mono" font-size="8" fill="#ef4444" font-weight="700">SIM</text>
+<rect x="840" y="1498" width="215" height="58" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#sh)"/>
+<text x="947" y="1517" text-anchor="middle" font-family="Sora" font-size="10" fill="#94a3b8">Enviar msg "Por que minha</text>
+<text x="947" y="1531" text-anchor="middle" font-family="Sora" font-size="10" fill="#94a3b8">conta já existe?" +</text>
+<text x="947" y="1545" text-anchor="middle" font-family="Sora" font-size="10" fill="#94a3b8">usar "Esqueci minha senha"</text>
+<line x1="947" y1="1556" x2="947" y2="1582" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="840" y="1582" width="215" height="36" rx="8" fill="#0f2d1e" stroke="#10b981" stroke-width="1.5"/>
+<text x="947" y="1599" text-anchor="middle" font-family="Sora" font-size="10" fill="#6ee7b7">✓ Recupera acesso</text>
+<text x="947" y="1613" text-anchor="middle" font-family="Sora" font-size="10" fill="#6ee7b7">via troca de senha</text>
+<line x1="947" y1="1618" x2="947" y2="1650" stroke="#10b981" stroke-width="1.5"/>
+<line x1="947" y1="1650" x2="550" y2="1650" stroke="#10b981" stroke-width="1.5"/>
+
+<line x1="550" y1="1582" x2="550" y2="1602" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrG)"/>
+<rect x="524" y="1585" width="52" height="18" rx="9" fill="#10b981"/>
+<text x="550" y="1597" text-anchor="middle" font-family="Space Mono" font-size="8" fill="white" font-weight="700">NÃO</text>
+
+<line x1="550" y1="1602" x2="550" y2="1650" stroke="#334155" stroke-width="1.5"/>
+<line x1="550" y1="1650" x2="550" y2="1670" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<polygon points="550,1670 730,1725 550,1780 370,1725" fill="#1a1a2e" stroke="#6366f1" stroke-width="1.5" filter="url(#sh)"/>
+<text x="550" y="1717" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#c7d2fe">Franqueado se</text>
+<text x="550" y="1733" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#c7d2fe">cadastrou no Visiun?</text>
+
+<line x1="550" y1="1780" x2="550" y2="1800" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrG)"/>
+<rect x="524" y="1783" width="52" height="18" rx="9" fill="#10b981"/>
+<text x="550" y="1795" text-anchor="middle" font-family="Space Mono" font-size="8" fill="white" font-weight="700">SIM</text>
+
+<rect x="370" y="1800" width="360" height="44" rx="8" fill="#0f2d1e" stroke="#10b981" stroke-width="1.5" filter="url(#sh)"/>
+<text x="550" y="1817" text-anchor="middle" font-family="Sora" font-size="11" fill="#6ee7b7">Liberar acesso do franqueado</text>
+<text x="550" y="1833" text-anchor="middle" font-family="Sora" font-size="11" fill="#6ee7b7">+ solicitar login</text>
+<line x1="550" y1="1844" x2="550" y2="1864" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<polygon points="550,1864 740,1924 550,1984 360,1924" fill="#1a1a2e" stroke="#6366f1" stroke-width="1.5" filter="url(#sh)"/>
+<text x="550" y="1916" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#c7d2fe">Sistema acusa</text>
+<text x="550" y="1932" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#c7d2fe">credenciais inválidas?</text>
+
+<line x1="740" y1="1924" x2="840" y2="1924" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrR)"/>
+<text x="783" y="1917" text-anchor="middle" font-family="Space Mono" font-size="8" fill="#ef4444" font-weight="700">SIM</text>
+<rect x="840" y="1898" width="215" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#sh)"/>
+<text x="947" y="1916" text-anchor="middle" font-family="Sora" font-size="10" fill="#94a3b8">Informar senha incorreta</text>
+<text x="947" y="1931" text-anchor="middle" font-family="Sora" font-size="10" fill="#94a3b8">+ usar "Esqueci minha senha"</text>
+<text x="947" y="1946" text-anchor="middle" font-family="Sora" font-size="10" fill="#6ee7b7">✓ Franqueado recupera</text>
+<line x1="947" y1="1954" x2="947" y2="1984" stroke="#10b981" stroke-width="1.5"/>
+
+<line x1="947" y1="1984" x2="550" y2="1984" stroke="#10b981" stroke-width="1.5"/>
+<line x1="550" y1="1984" x2="550" y2="2004" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<polygon points="550,2004 730,2059 550,2114 370,2059" fill="#1a1a2e" stroke="#6366f1" stroke-width="1.5" filter="url(#sh)"/>
+<text x="550" y="2051" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#c7d2fe">Consegue acessar</text>
+<text x="550" y="2067" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#c7d2fe">o Visiun?</text>
+
+<line x1="550" y1="2114" x2="550" y2="2134" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrG)"/>
+<rect x="524" y="2117" width="52" height="18" rx="9" fill="#10b981"/>
+<text x="550" y="2129" text-anchor="middle" font-family="Space Mono" font-size="8" fill="white" font-weight="700">SIM</text>
+
+<rect x="370" y="2134" width="360" height="44" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#sh)"/>
+<text x="550" y="2151" text-anchor="middle" font-family="Sora" font-size="11" fill="#94a3b8">Perguntar se deseja</text>
+<text x="550" y="2167" text-anchor="middle" font-family="Sora" font-size="11" fill="#94a3b8">mais alguma coisa</text>
+<line x1="550" y1="2178" x2="550" y2="2198" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<polygon points="550,2198 710,2248 550,2298 390,2248" fill="#1a1a2e" stroke="#6366f1" stroke-width="1.5" filter="url(#sh)"/>
+<text x="550" y="2240" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#c7d2fe">Tem mais</text>
+<text x="550" y="2256" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#c7d2fe">dúvidas?</text>
+
+<line x1="710" y1="2248" x2="790" y2="2248" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrR)"/>
+<text x="744" y="2242" text-anchor="middle" font-family="Space Mono" font-size="8" fill="#f59e0b" font-weight="700">SIM</text>
+<rect x="790" y="2224" width="185" height="46" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#sh)"/>
+<text x="882" y="2244" text-anchor="middle" font-family="Sora" font-size="10" fill="#94a3b8">Tirar a dúvida</text>
+<text x="882" y="2260" text-anchor="middle" font-family="Sora" font-size="10" fill="#94a3b8">do franqueado</text>
+<line x1="882" y1="2270" x2="882" y2="2310" stroke="#334155" stroke-width="1.5"/>
+<line x1="882" y1="2310" x2="710" y2="2310" stroke="#334155" stroke-width="1.5"/>
+<line x1="710" y1="2310" x2="710" y2="2248" stroke="#334155" stroke-width="1.5"/>
+
+<line x1="550" y1="2298" x2="550" y2="2318" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrG)"/>
+<rect x="524" y="2301" width="52" height="18" rx="9" fill="#10b981"/>
+<text x="550" y="2313" text-anchor="middle" font-family="Space Mono" font-size="8" fill="white" font-weight="700">NÃO</text>
+
+<rect x="370" y="2318" width="360" height="44" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#sh)"/>
+<text x="550" y="2335" text-anchor="middle" font-family="Sora" font-size="11" fill="#94a3b8">⏳ Aguardar 5 minutos</text>
+<text x="550" y="2351" text-anchor="middle" font-family="Sora" font-size="11" font-weight="600" fill="#60a5fa">Enviar msg "Fechamento de mensagem"</text>
+<line x1="550" y1="2362" x2="550" y2="2382" stroke="#334155" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<rect x="400" y="2382" width="300" height="44" rx="22" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2" filter="url(#sh)"/>
+<text x="550" y="2409" text-anchor="middle" font-family="Sora" font-size="13" font-weight="700" fill="#93c5fd">🔴 FIM — Atendimento encerrado</text>
+
+</svg>
+</body>
+</html>

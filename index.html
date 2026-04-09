@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxogramas de Processos - Suporte Visiun</title>
+    <style>
+        /* Tipografia e Fundo baseados na apresentação */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        body {
+            background-color: #0f141e; /* Fundo escuro azulado */
+            font-family: 'Inter', sans-serif;
+            color: #e2e8f0;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .header-section {
+            margin-bottom: 40px;
+        }
+
+        .subtitle {
+            text-transform: uppercase;
+            color: #ef4444; /* Vermelho do slide de gargalos */
+            font-size: 12px;
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .title {
+            font-size: 28px;
+            color: #ffffff;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .description {
+            color: #94a3b8;
+            font-size: 14px;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        /* Grid dos Cards */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        /* Estilo do Card (semelhante aos quadros de equipe/gargalos) */
+        .card {
+            background-color: #171f2f; /* Fundo do card */
+            border-radius: 8px;
+            padding: 24px;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.25);
+            background-color: #1e293b;
+        }
+
+        /* Borda superior colorida */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        /* Cores baseadas nas "Linhas de Atuação" (Azul, Roxo, Verde, Laranja, etc.) */
+        .card-1::before { background-color: #3b82f6; } 
+        .card-2::before { background-color: #8b5cf6; } 
+        .card-3::before { background-color: #10b981; } 
+        .card-4::before { background-color: #ef4444; } 
+        .card-5::before { background-color: #f59e0b; } 
+        .card-6::before { background-color: #06b6d4; } 
+        .card-7::before { background-color: #ec4899; } 
+
+        .card-icon {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .card-action {
+            margin-top: auto;
+            font-size: 13px;
+            color: #64748b;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+
+        .card:hover .card-action {
+            color: #3b82f6;
+        }
+
+        .card-action svg {
+            width: 14px;
+            height: 14px;
+            fill: currentColor;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-section">
+            <div class="subtitle">Visão Geral Operacional · 01</div>
+            <h1 class="title">Fluxogramas de Processos</h1>
+            <p class="description">Mapeamento visual dos principais fluxos operacionais do sistema.</p>
+        </div>
+
+        <div class="grid-container">
+            
+            <a href="fluxo-nova-base.html" target="_blank" class="card card-1">
+                <div class="card-icon">🏢</div>
+                <div class="card-title">Nova Base LocAgora</div>
+                <div class="card-action">
+                    <span>Visualizar fluxo</span>
+                    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                </div>
+            </a>
+
+            <a href="fluxo-primeiro-acesso.html" target="_blank" class="card card-2">
+                <div class="card-icon">🔑</div>
+                <div class="card-title">Primeiro Acesso Franqueado</div>
+                <div class="card-action">
+                    <span>Visualizar fluxo</span>
+                    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                </div>
+            </a>
+
+            <a href="fluxo-acesso-internacional.html" target="_blank" class="card card-3">
+                <div class="card-icon">🌍</div>
+                <div class="card-title">Acesso Internacional Franqueado</div>
+                <div class="card-action">
+                    <span>Visualizar fluxo</span>
+                    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                </div>
+            </a>
+
+            <a href="fluxo-bloqueio-inadimplencia.html" target="_blank" class="card card-4">
+                <div class="card-icon">⛔</div>
+                <div class="card-title">Bloqueio por Inadimplência</div>
+                <div class="card-action">
+                    <span>Visualizar fluxo</span>
+                    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                </div>
+            </a>
+
+            <a href="fluxo-controle-mensal-usuarios.html" target="_blank" class="card card-5">
+                <div class="card-icon">👥</div>
+                <div class="card-title">Controle Mensal de Usuários Masters</div>
+                <div class="card-action">
+                    <span>Visualizar fluxo</span>
+                    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                </div>
+            </a>
+
+            <a href="fluxo-controle-de-modulos.html" target="_blank" class="card card-6">
+                <div class="card-icon">⚙️</div>
+                <div class="card-title">Controle de Módulos de Usuários</div>
+                <div class="card-action">
+                    <span>Visualizar fluxo</span>
+                    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                </div>
+            </a>
+
+            <a href="fluxo-exclusao-em-massa.html" target="_blank" class="card card-7">
+                <div class="card-icon">🗑️</div>
+                <div class="card-title">Exclusão de Boletos em Massa</div>
+                <div class="card-action">
+                    <span>Visualizar fluxo</span>
+                    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>
